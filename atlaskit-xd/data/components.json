@@ -1,0 +1,79 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2021-12-05T22:40:46.479Z",
+  "entities": [
+    {
+      "class": "component",
+      "type": "page",
+      "tags": [],
+      "id": "5ceb800c-0547-4485-b0ac-2d70bced19ca",
+      "related_entity_ids": [],
+      "snippets": {
+        "trigger": "",
+        "languages": {}
+      },
+      "name": "btn-danger",
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "81fc10cf-7b11-4d56-a2b4-6de8f97dcc42",
+        "last_sync": "2021-12-05T22:40:46.475Z",
+        "sync": true
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "tags": [],
+      "id": "ba0c2fab-50b8-4a3f-a5f3-2dba3b792e69",
+      "related_entity_ids": [],
+      "snippets": {
+        "trigger": "",
+        "languages": {}
+      },
+      "name": "btn-link",
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "c17fd616-b209-401d-a335-439aaaa44ed2",
+        "last_sync": "2021-12-05T22:40:46.475Z",
+        "sync": true
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "tags": [],
+      "id": "a1980b0d-ebc5-4d9d-9aab-0d46044efc41",
+      "related_entity_ids": [],
+      "snippets": {
+        "trigger": "",
+        "languages": {}
+      },
+      "name": "btn-primary",
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "604df748-ad99-4ae7-babe-6c92ded4971a",
+        "last_sync": "2021-12-05T22:40:46.475Z",
+        "sync": true
+      }
+    },
+    {
+      "class": "component",
+      "type": "page",
+      "tags": [],
+      "id": "fcc2cdf9-ce9e-4e36-9641-bbd83d9a9d7e",
+      "related_entity_ids": [],
+      "snippets": {
+        "trigger": "",
+        "languages": {}
+      },
+      "name": "btn-warn",
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "31ffcee9-7a44-4c6a-85fd-59a46d371678",
+        "last_sync": "2021-12-05T22:46:51.402Z",
+        "sync": true
+      }
+    }
+  ]
+}

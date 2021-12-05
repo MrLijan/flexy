@@ -1,0 +1,211 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2021-12-05T22:40:46.479Z",
+  "entities": [
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "e53d8f70-cde4-4add-b2f0-9512a5586b55",
+      "name": "text-h500",
+      "tags": [],
+      "related_entity_ids": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "3663ad47-febe-4466-9120-6809ae2560b8",
+        "last_sync": "2021-12-05T22:40:46.475Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "605b1d9c-c1f0-47ab-ae88-c14408ec44c4",
+          "type": "custom",
+          "value": "Segoe UI",
+          "key": "family"
+        },
+        {
+          "id": "605b1d9c-c1f0-47ab-ae88-c14408ec44c4",
+          "type": "custom",
+          "value": "Semibold",
+          "key": "weight"
+        },
+        {
+          "id": "605b1d9c-c1f0-47ab-ae88-c14408ec44c4",
+          "type": "size",
+          "value": "16",
+          "key": "size"
+        }
+      ]
+    },
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "a91da5d9-9f1e-4c14-9fd0-8a02add984cb",
+      "name": "text-h400",
+      "tags": [],
+      "related_entity_ids": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "ae60da98-b558-4b0c-98ac-dcb85a05f319",
+        "last_sync": "2021-12-05T22:40:46.475Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "e2825c5d-2ffb-43d8-bb87-8ed990bc039d",
+          "type": "custom",
+          "value": "Segoe UI",
+          "key": "family"
+        },
+        {
+          "id": "e2825c5d-2ffb-43d8-bb87-8ed990bc039d",
+          "type": "custom",
+          "value": "Semibold",
+          "key": "weight"
+        },
+        {
+          "id": "e2825c5d-2ffb-43d8-bb87-8ed990bc039d",
+          "type": "size",
+          "value": "14",
+          "key": "size"
+        }
+      ]
+    },
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "2d0394bf-3bbb-4e3a-8dba-624e7e52d2e2",
+      "name": "text-h600",
+      "tags": [],
+      "related_entity_ids": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "efba80b8-6391-4a6c-8f33-4e730f82ce18",
+        "last_sync": "2021-12-05T22:40:46.475Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "ec5cf067-7193-4f41-887c-f132c23fbe37",
+          "type": "custom",
+          "value": "Segoe UI",
+          "key": "family"
+        },
+        {
+          "id": "ec5cf067-7193-4f41-887c-f132c23fbe37",
+          "type": "custom",
+          "value": "Regular",
+          "key": "weight"
+        },
+        {
+          "id": "ec5cf067-7193-4f41-887c-f132c23fbe37",
+          "type": "size",
+          "value": "20",
+          "key": "size"
+        }
+      ]
+    },
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "624e1937-e195-471f-a4ce-1641eee3c0f3",
+      "name": "text-h700",
+      "tags": [],
+      "related_entity_ids": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "b88a1c4b-db55-48db-9de3-ea5e8045d045",
+        "last_sync": "2021-12-05T22:40:46.475Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "455c06ad-a0af-4c2d-a50a-01dc71a76b21",
+          "type": "custom",
+          "value": "Segoe UI",
+          "key": "family"
+        },
+        {
+          "id": "455c06ad-a0af-4c2d-a50a-01dc71a76b21",
+          "type": "custom",
+          "value": "Regular",
+          "key": "weight"
+        },
+        {
+          "id": "455c06ad-a0af-4c2d-a50a-01dc71a76b21",
+          "type": "size",
+          "value": "24",
+          "key": "size"
+        }
+      ]
+    },
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "015baa89-2d63-49bf-8c48-4bebaa0882f0",
+      "name": "text-h800",
+      "tags": [],
+      "related_entity_ids": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "4684a372-b958-4419-9fc3-d58409d6a599",
+        "last_sync": "2021-12-05T22:40:46.476Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "f938c82a-e540-4a76-8cb4-758dd08e8ba0",
+          "type": "custom",
+          "value": "Segoe UI",
+          "key": "family"
+        },
+        {
+          "id": "f938c82a-e540-4a76-8cb4-758dd08e8ba0",
+          "type": "custom",
+          "value": "Semibold",
+          "key": "weight"
+        },
+        {
+          "id": "f938c82a-e540-4a76-8cb4-758dd08e8ba0",
+          "type": "size",
+          "value": "29",
+          "key": "size"
+        }
+      ]
+    },
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "4f1a9503-d57a-43f5-8d63-565424df5280",
+      "name": "text-h900",
+      "tags": [],
+      "related_entity_ids": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/89d4ace1-187f-431c-6016-2254b6a1e693",
+        "id": "ba910ba0-2ed6-478e-b289-fdd77c423e67",
+        "last_sync": "2021-12-05T22:40:46.476Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "9cc2ba8a-b71f-4610-a9af-4ea5f3eb92d3",
+          "type": "custom",
+          "value": "Segoe UI",
+          "key": "family"
+        },
+        {
+          "id": "9cc2ba8a-b71f-4610-a9af-4ea5f3eb92d3",
+          "type": "custom",
+          "value": "Regular",
+          "key": "weight"
+        },
+        {
+          "id": "9cc2ba8a-b71f-4610-a9af-4ea5f3eb92d3",
+          "type": "size",
+          "value": "35",
+          "key": "size"
+        }
+      ]
+    }
+  ]
+}
