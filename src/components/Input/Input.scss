@@ -1,15 +1,33 @@
+label {
+  font-size: 0.75em;
+  color: transparentize($app-dark, $amount: 0.5);
+  padding: 10px;
+  font-weight: 600 !important;
+}
+
 input {
   position: relative;
-  line-height: 2em;
+  line-height: 2.25em;
   box-sizing: border-box;
   width: 100%;
 
-  background-color: var(--app-grey-500);
-  border: 2px solid var(--app-grey-600);
+  font-size: 14px;
+  font-family: 'Readex Pro';
+  color: $app-dark;
+
+  background-color: $neutral-10;
+  border: 1px solid $neutral-50;
   border-radius: 4px;
   padding: 0 10px;
 
+  // onFocus:
   &:focus {
-    outline: 2px solid $app-blue-500;
+    outline: 2px solid transparentize($app-blue, 0.6);
+  }
+
+  // isDisabled:
+  &:disabled {
+    background-color: $neutral-30;
+    border: 1px solid $neutral-50;
   }
 }

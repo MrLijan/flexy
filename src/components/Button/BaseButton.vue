@@ -1,11 +1,9 @@
 <template>
-  <button @click="logSome" class="base-button">
+  <button @click="$emit('clicked')" class="base-button">
     <!-- ICON -->
-
     <base-icon v-if="icon" :src="icon"></base-icon>
-
     <!-- TEXT -->
-    <slot />
+    <slot></slot>
   </button>
 </template>
 
@@ -20,10 +18,6 @@ export default {
   },
 
   props: {
-    text: {
-      type: String,
-    },
-
     icon: {
       type: String,
       required: false,
@@ -32,12 +26,6 @@ export default {
 
   data() {
     return {};
-  },
-
-  methods: {
-    logSome() {
-      console.log('Button Clicked');
-    },
   },
 };
 </script>

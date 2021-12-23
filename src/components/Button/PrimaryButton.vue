@@ -1,12 +1,14 @@
 <template>
-  <button @click="logSome" class="primary-button">
-    <!-- ICON -->
+  <div class="primary-button">
+    <button>
+      <!-- text -->
+      <slot />
 
-    <base-icon v-if="icon" :src="icon"></base-icon>
+      <!-- icon -->
 
-    <!-- TEXT -->
-    <slot />
-  </button>
+      <base-icon v-show="icon" :src="icon" class="icon"></base-icon>
+    </button>
+  </div>
 </template>
 
 <script>
@@ -14,25 +16,26 @@ import BaseButton from '@/components/Button/BaseButton.vue';
 
 export default {
   extends: BaseButton,
+  data() {
+    return {
+      isHover: false,
+    };
+  },
+
+  computed: {
+    stateHover() {
+      return this.isHover;
+    },
+  },
+
+  methods: {
+    setHover() {
+      this.isHover = !this.isHover;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.primary-button {
-  display: inline-flex;
-  padding: 8px 10px;
-  border-radius: 4px;
-  border: none;
-
-  background: var(--app-blue);
-  color: var(--app-white);
-
-  font-weight: 600;
-  cursor: pointer;
-  align-items: center;
-
-  :nth-child(1) {
-    margin-right: 5px;
-  }
-}
+@import './Button.scss';
 </style>

@@ -1,2 +1,20 @@
-$app-blue: hsl(216, 100%, 40%);
-$app-blue-500: lighten($app-blue, 20%);
+// -> App vars:
+$app-bg: hsl(0, 0%, 96%);
+$app-blue: hsl(223, 100%, 55%);
+$app-green: hsl(115, 57%, 51%);
+$app-red: hsl(355, 100%, 64%);
+$app-yellow: hsl(44, 100%, 50%);
+$app-dark: hsl(0, 0%, 12%);
+$app-white: hsl(0, 0%, 100%);
+
+// -> Neutrals - Light:
+$neutral-50: hsl(216, 14%, 79%);
+$neutral-40: hsl(223, 12%, 89%);
+$neutral-30: hsl(228, 14%, 93%);
+$neutral-20: hsl(220, 16%, 96%);
+$neutral-10: hsl(210, 25%, 98%);
+
+// -> App - Shadow:
+@function shadow($color) {
+  @return 0 20px 35px -10px rgba($color, 0.5);
+}
