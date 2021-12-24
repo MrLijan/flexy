@@ -31,3 +31,14 @@ input {
     border: 1px solid $neutral-50;
   }
 }
+
+.field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    position: absolute;
+    right: 10px;
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="text-input">
+  <div class="search-input">
     <label v-if="label" for="input">{{ label }}</label>
     <div class="field-wrapper">
       <input
@@ -9,15 +9,20 @@
         :placeholder="placeholder"
         :disabled="disabled"
       />
+      <base-icon class="icon" src="search" stroke="#012"></base-icon>
     </div>
   </div>
 </template>
 
 <script>
-import InputMixin from './InputMixin';
+import TextInput from './TextInput.vue';
+import BaseIcon from '../Icon/BaseIcon.vue';
 
 export default {
-  mixins: [InputMixin],
+  extends: TextInput,
+  components: {
+    BaseIcon,
+  },
 };
 </script>
 

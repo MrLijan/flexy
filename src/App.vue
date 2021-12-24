@@ -7,7 +7,8 @@
     </div>
     <div class="main-box">
       <form action="">
-        <base-input @type="logSome" label="First name"></base-input>
+        <text-input @type="logSome" label="First name"></text-input>
+        <search-input @type="logSome" label="Country" icon="search-1"></search-input>
         <ghost-button icon="add-circle">Discord</ghost-button>
       </form>
       <primary-button class="cta-button" icon="arrow-right"
@@ -18,15 +19,16 @@
 </template>
 
 <script>
-// import BaseButton from './components/Button/BaseButton.vue';
 import PrimaryButton from './components/Button/PrimaryButton.vue';
-import BaseInput from './components/Input/TextInput.vue';
 import GhostButton from './components/Button/GhostButton.vue';
+import TextInput from './components/Input/TextInput.vue';
+import SearchInput from './components/Input/SearchInput.vue';
 
 export default {
   name: 'App',
   components: {
-    BaseInput,
+    TextInput,
+    SearchInput,
     GhostButton,
     PrimaryButton,
   },

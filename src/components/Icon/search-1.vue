@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable max-len -->
   <svg
     class="iconsax"
     stroke="currentColor"
@@ -9,18 +10,11 @@
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699"
+      d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
       stroke-width="1.5"
-      stroke-miterlimit="10"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
-    <path
-      d="M3.5 12H20.33"
-      stroke-width="1.5"
-      stroke-miterlimit="10"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
+    <path d="M22 22L20 20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
   </svg>
 </template>
