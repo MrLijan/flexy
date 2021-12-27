@@ -18,3 +18,7 @@ $neutral-10: hsl(210, 25%, 98%);
 @function shadow($color) {
   @return 0 20px 35px -10px rgba($color, 0.5);
 }
+
+@function setOpacity($color, $level) {
+  @return transparentize($color, $level)
+}

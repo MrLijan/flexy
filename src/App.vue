@@ -1,24 +1,26 @@
 <template>
   <div id="app">
+    <base-modal>123</base-modal>
     <div class="content"></div>
     <div class="header">
       <h2>Welcome!</h2>
       <h3>Please, fill up the form</h3>
     </div>
     <div class="main-box">
-      <form action="">
+      <form>
         <text-input @type="logSome" label="First name"></text-input>
         <search-input @type="logSome" label="Country" icon="search-1"></search-input>
         <ghost-button icon="add-circle">Discord</ghost-button>
       </form>
-      <primary-button class="cta-button" icon="arrow-right"
-        >Take me to the next step</primary-button
-      >
+      <primary-button class="cta-button" icon="arrow-right">
+        Take me to the next step
+      </primary-button>
     </div>
   </div>
 </template>
 
 <script>
+import BaseModal from './components/Modal/BaseModal.vue';
 import PrimaryButton from './components/Button/PrimaryButton.vue';
 import GhostButton from './components/Button/GhostButton.vue';
 import TextInput from './components/Input/TextInput.vue';
@@ -27,6 +29,7 @@ import SearchInput from './components/Input/SearchInput.vue';
 export default {
   name: 'App',
   components: {
+    BaseModal,
     TextInput,
     SearchInput,
     GhostButton,
