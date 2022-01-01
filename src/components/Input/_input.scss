@@ -1,7 +1,13 @@
-label {
-  font-size: 0.75em;
+.de-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.85em;
   color: transparentize($app-dark, $amount: 0.5);
-  padding: 10px;
+  padding: 2px 10px;
   font-weight: 600 !important;
 }
 
@@ -41,4 +47,13 @@ input {
     position: absolute;
     right: 10px;
   }
+}
+
+.message {
+  font-size: 0.75em;
+  padding: 2px 10px;
+}
+
+.success {
+  color: $app-green;
 }

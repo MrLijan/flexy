@@ -1,5 +1,11 @@
 export default {
   props: {
+    active: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+
     disabled: {
       type: Boolean,
       required: false,
@@ -7,8 +13,8 @@ export default {
     },
 
     icon: {
-      type: String,
-      default: 'add-circle',
+      type: Boolean,
+      default: false,
       required: false,
     },
   },

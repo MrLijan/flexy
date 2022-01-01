@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <base-modal>123</base-modal>
+    <!-- <base-modal>123</base-modal> -->
     <div class="content"></div>
     <div class="header">
       <h2>Welcome!</h2>
@@ -8,32 +8,38 @@
     </div>
     <div class="main-box">
       <form>
-        <text-input @type="logSome" label="First name"></text-input>
+        <de-input @type="logSome" label="First name" message="Password incorrect"> </de-input>
         <search-input @type="logSome" label="Country" icon="search-1"></search-input>
-        <ghost-button icon="add-circle">Discord</ghost-button>
+        <ghost-button icon>
+          <base-icon slot="icon" src="add-circle" />
+          Discord
+        </ghost-button>
       </form>
-      <primary-button class="cta-button" icon="arrow-right">
+      <primary-button class="cta-button" icon fluid>
         Take me to the next step
+        <base-icon src="arrow-right" slot="icon" />
       </primary-button>
     </div>
   </div>
 </template>
 
 <script>
-import BaseModal from './components/Modal/BaseModal.vue';
-import PrimaryButton from './components/Button/PrimaryButton.vue';
-import GhostButton from './components/Button/GhostButton.vue';
-import TextInput from './components/Input/TextInput.vue';
+// import BaseModal from './components/Modal/BaseModal.vue';
+import PrimaryButton from './components/Button/de-button-primary.vue';
+import GhostButton from './components/Button/de-button-ghost.vue';
+import DeInput from './components/Input/de-input.vue';
 import SearchInput from './components/Input/SearchInput.vue';
+import BaseIcon from './components/Icon/BaseIcon.vue';
 
 export default {
   name: 'App',
   components: {
-    BaseModal,
-    TextInput,
+    // BaseModal,
+    DeInput,
     SearchInput,
     GhostButton,
     PrimaryButton,
+    BaseIcon,
   },
 
   methods: {

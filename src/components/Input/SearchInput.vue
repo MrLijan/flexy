@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import TextInput from './TextInput.vue';
+import TextInput from './de-input.vue';
 import BaseIcon from '../Icon/BaseIcon.vue';
 
 export default {
