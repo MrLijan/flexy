@@ -12,7 +12,7 @@
 
       <de-card subtitle>
         <form>
-          <de-input @type="logSome" label="First name" message="Password incorrect"> </de-input>
+          <de-input @type="logSome" placeholder="LIRAM" disabled> </de-input>
           <search-input @type="logSome" label="Country" icon="search-1"></search-input>
           <ghost-button icon>
             <base-icon slot="icon" src="add-circle" />

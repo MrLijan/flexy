@@ -1,19 +1,12 @@
 <template>
-  <div class="de-input">
-    <label v-if="label" for="input" class="label">{{ label }}</label>
-    <div class="field-wrapper">
-      <input
-        type="text"
-        v-model="value"
-        v-on="listeners"
-        :placeholder="placeholder"
-        :disabled="disabled"
-      />
-    </div>
-    <label class="message" for="input" v-if="message">
-      {{ message }}
-    </label>
-  </div>
+  <input
+    type="text"
+    v-model="value"
+    v-on="listeners"
+    :placeholder="placeholder"
+    :disabled="disabled"
+    class="de-input"
+  />
 </template>
 
 <script>
