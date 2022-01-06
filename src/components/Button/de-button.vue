@@ -1,8 +1,6 @@
 <template>
+  <!-- Base button -->
   <button @click="clicked" class="base-button">
-    <!-- ICON -->
-    <slot name="icon" v-if="icon"></slot>
-
     <!-- TEXT -->
     <span>
       <slot></slot>

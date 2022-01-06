@@ -1,11 +1,20 @@
 // -> App vars:
 $app-bg: hsl(0, 0%, 96%);
-$app-blue: hsl(223, 100%, 55%);
+$app-bg-dark: hsl(218, 24%, 7%);
+$app-bg-dark2: hsl(226, 37%, 7%);
+$app-blue: hsl(207, 83%, 60%);
 $app-green: hsl(115, 57%, 51%);
-$app-red: hsl(355, 100%, 64%);
+$app-red: hsl(14, 100%, 58%);
 $app-yellow: hsl(44, 100%, 50%);
 $app-dark: hsl(0, 0%, 12%);
+$app-dark-grey: hsl(220, 9%, 7%);
+$app-dark-grey2: hsl(222, 15%, 13%);
+$app-black: hsl(0, 0%, 0%);
 $app-white: hsl(0, 0%, 100%);
+$app-purple: hsl(242, 53%, 54%);
+$app-grey: hsl(212, 7%, 40%);
+
+$border: 8px;
 
 // -> Neutrals - Light:
 $neutral-50: hsl(216, 14%, 79%);
@@ -20,5 +29,5 @@ $neutral-10: hsl(210, 25%, 98%);
 }
 
 @function setOpacity($color, $level) {
-  @return transparentize($color, $level)
+  @return transparentize($color, $level);
 }
