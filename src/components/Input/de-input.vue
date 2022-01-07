@@ -14,10 +14,6 @@ export default {
   name: 'DeInput',
 
   props: {
-    label: {
-      type: String,
-      required: false,
-    },
     placeholder: {
       type: String,
       required: false,
@@ -25,11 +21,6 @@ export default {
     disabled: {
       type: Boolean,
       default: false,
-    },
-    message: {
-      type: String,
-      default: null,
-      required: false,
     },
   },
 
@@ -45,6 +36,9 @@ export default {
         ...this.$listeners,
         input: (e) => {
           this.$emit('input', e.target.value);
+        },
+        focus: () => {
+          this.$emit('focus');
         },
       };
     },

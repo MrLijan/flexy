@@ -11,9 +11,9 @@
       </div>
 
       <de-card subtitle>
-        <form>
-          <de-input @type="logSome" placeholder="LIRAM" disabled> </de-input>
-          <search-input @type="logSome" label="Country" icon="search-1"></search-input>
+        <form class="form">
+          <de-input @type="logSome" placeholder="CRSHR21#1510" disabled> </de-input>
+          <search-input></search-input>
           <ghost-button icon>
             <base-icon slot="icon" src="add-circle" />
             Discord
@@ -40,7 +40,7 @@ import Button from './components/Button/de-button.vue';
 import PrimaryButton from './components/Button/de-button-primary.vue';
 import GhostButton from './components/Button/de-button-ghost.vue';
 import DeInput from './components/Input/de-input.vue';
-import SearchInput from './components/Input/SearchInput.vue';
+import SearchInput from './components/Input/de-input-search.vue';
 import BaseIcon from './components/Icon/BaseIcon.vue';
 import DeNavbar from './components/Navbar/de-navbar.vue';
 
@@ -85,5 +85,15 @@ body {
 .content {
   display: grid;
   place-items: center;
+}
+
+.header {
+  position: inherit;
+  text-align: left;
+  width: 33.3%;
+}
+
+.form > * {
+  margin-bottom: 24px;
 }
 </style>
