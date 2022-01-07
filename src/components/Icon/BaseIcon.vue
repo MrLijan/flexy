@@ -9,6 +9,7 @@ import add from './add.vue';
 import addCircle from './add-circle.vue';
 import arrowRight from './arrow-right.vue';
 import search from './search-1.vue';
+import discord from './discord.vue';
 
 export default {
   name: 'icon',
@@ -18,6 +19,7 @@ export default {
     addCircle,
     arrowRight,
     search,
+    discord,
   },
 
   props: {
@@ -30,6 +32,11 @@ export default {
       type: String,
       required: false,
       default: '$app-dark',
+    },
+    width: {
+      type: Number,
+      required: false,
+      default: 24,
     },
   },
 

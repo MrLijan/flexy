@@ -6,28 +6,27 @@
         <h2>Welcome!</h2>
         <h3>Please, fill up the form</h3>
       </div>
-      <div class="buttons">
-        <Button>Liram</Button>
-      </div>
 
       <de-card subtitle>
         <form class="form">
-          <de-input @type="logSome" placeholder="CRSHR21#1510" disabled> </de-input>
-          <search-input></search-input>
-          <ghost-button icon>
-            <base-icon slot="icon" src="add-circle" />
-            Discord
-          </ghost-button>
+          <de-input @type="logSome" placeholder="USERNAME"></de-input>
+          <de-input-search placeholder="PASSWORD"></de-input-search>
         </form>
         <primary-button class="cta-button" icon fluid>
           Take me to the next step
           <base-icon src="arrow-right" slot="icon" />
         </primary-button>
-        <div>
-          <de-navbar></de-navbar>
+
+        <div class="actions">
+          <de-button-ghost icon>
+            <base-icon slot="icon" src="discord"></base-icon>
+            Discord Login
+          </de-button-ghost>
         </div>
 
-        <div slot="subtitle">lorem</div>
+        <div slot="subtitle">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.asdad</p>
+        </div>
       </de-card>
     </div>
   </div>
@@ -36,13 +35,11 @@
 <script>
 // import BaseModal from './components/Modal/BaseModal.vue';
 import DeCard from './components/Card/de-card.vue';
-import Button from './components/Button/de-button.vue';
 import PrimaryButton from './components/Button/de-button-primary.vue';
-import GhostButton from './components/Button/de-button-ghost.vue';
 import DeInput from './components/Input/de-input.vue';
-import SearchInput from './components/Input/de-input-search.vue';
+import DeInputSearch from './components/Input/de-input-search.vue';
 import BaseIcon from './components/Icon/BaseIcon.vue';
-import DeNavbar from './components/Navbar/de-navbar.vue';
+import DeButtonGhost from './components/Button/de-button-ghost.vue';
 
 export default {
   name: 'App',
@@ -50,12 +47,10 @@ export default {
     // BaseModal,
     DeCard,
     DeInput,
-    SearchInput,
-    GhostButton,
+    DeInputSearch,
     PrimaryButton,
     BaseIcon,
-    DeNavbar,
-    Button,
+    DeButtonGhost,
   },
 
   methods: {
@@ -68,7 +63,6 @@ export default {
 
 <style lang="scss">
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 @import './assets/styles/_variables.scss';
 @import './assets/styles/app.scss';
 
@@ -95,5 +89,9 @@ body {
 
 .form > * {
   margin-bottom: 24px;
+}
+
+.actions {
+  margin-top: 26px;
 }
 </style>
