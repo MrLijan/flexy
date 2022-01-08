@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/styles/app.scss';
 .ghost-button {
   button {
     cursor: pointer;
