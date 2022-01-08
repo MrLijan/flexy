@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 .de-card {
   position: relative;
-  max-width: 66.6%;
+  max-width: 300px;
   min-width: 33.3%;
 
   background-color: $app-bg-dark;
@@ -55,7 +55,12 @@ export default {
     text-align: center;
     color: $app-grey;
     border-end-end-radius: $border;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 0.8em;
+
+    p {
+      margin: 0;
+    }
   }
 }
 </style>

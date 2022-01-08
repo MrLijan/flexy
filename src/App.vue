@@ -2,30 +2,37 @@
   <div id="app">
     <!-- <base-modal>123</base-modal> -->
     <div class="content">
-      <div class="header">
-        <h2>Welcome!</h2>
-        <h3>Please, fill up the form</h3>
-      </div>
-
       <de-card subtitle>
+        <div class="header">
+          <h2>Welcome!</h2>
+          <h4>Please login to claim your prizes</h4>
+        </div>
+
         <form class="form">
           <de-input @type="logSome" placeholder="USERNAME"></de-input>
           <de-input-search placeholder="PASSWORD"></de-input-search>
         </form>
         <primary-button class="cta-button" icon fluid>
-          Take me to the next step
+          Take me to the unknown
           <base-icon src="arrow-right" slot="icon" />
         </primary-button>
 
         <div class="actions">
           <de-button-ghost icon>
             <base-icon slot="icon" src="discord"></base-icon>
-            Discord Login
+            Login with Discord
+          </de-button-ghost>
+          <de-button-ghost icon>
+            <base-icon slot="icon" src="arrow-right"></base-icon>
+            Login with Google
           </de-button-ghost>
         </div>
 
         <div slot="subtitle">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.asdad</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+          </p>
         </div>
       </de-card>
     </div>
@@ -82,16 +89,33 @@ body {
 }
 
 .header {
-  position: inherit;
-  text-align: left;
-  width: 33.3%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+
+  h2 {
+    text-transform: uppercase;
+    color: $app-bg;
+  }
+  h4 {
+    margin-top: -20px;
+    color: $app-grey;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
 }
 
-.form > * {
-  margin-bottom: 24px;
+.form {
+  margin-bottom: 45px;
+
+  * {
+    margin-bottom: 15px;
+  }
 }
 
 .actions {
-  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
 }
 </style>

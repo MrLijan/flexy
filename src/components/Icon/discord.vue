@@ -1,5 +1,5 @@
 <template>
-  <svg width="24" height="auto" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="24" height="24" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0)">
       <!-- eslint-disable max-len -->
       <path

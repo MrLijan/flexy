@@ -24,12 +24,12 @@ export default {
 .ghost-button {
   button {
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 
-    padding: 11px 25px;
-    border-radius: 8px;
+    padding: 5px 10px;
+    border-radius: $border;
     background-color: setOpacity($app-purple, 0.8);
     border: 2px solid $app-purple;
 
@@ -40,7 +40,7 @@ export default {
     color: $neutral-10;
 
     :nth-child(1) {
-      margin: 0 8px;
+      margin: 0 10px;
     }
   }
 }
