@@ -1,31 +1,36 @@
 <template>
   <div class="primary-button">
-    <button @click="clicked" :class="fluid ? 'fluid' : ''">
+    <button @click="clicked" :class="fluid ? 'fluid' : ''" :disabled="disabled">
       <!-- text -->
-      <span>
-        <slot></slot>
-      </span>
+      {{ label }}
 
       <!-- icon -->
       <div class="icon">
-        <slot name="icon" v-if="icon"></slot>
+        <base-icon v-if="icon" :src="icon"></base-icon>
       </div>
     </button>
   </div>
 </template>
 
 <script>
+import BaseIcon from '../Icon/BaseIcon.vue';
 import DeButton from './de-button.vue';
 
 export default {
   name: 'DeButtonPrimary',
   extends: DeButton,
 
+  components: { BaseIcon },
+
   props: {
     fluid: {
       type: Boolean,
       required: false,
       default: false,
+    },
+    icon: {
+      type: String,
+      required: false,
     },
   },
 

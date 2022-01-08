@@ -54,16 +54,10 @@
     font-family: 'Readex Pro';
     line-height: 2em;
     color: $app-white;
+    box-shadow: shadow($app-blue);
 
     :nth-child(1) {
       margin: 0 8px;
-    }
-
-    box-shadow: shadow($app-blue);
-    &:hover {
-      transform: translateY(3px);
-      transition: all 0.3s;
-      box-shadow: none;
     }
 
     .icon {
@@ -72,10 +66,27 @@
       transform: translateX(+100px);
     }
 
-    &:hover > .icon {
-      opacity: 1;
-      transform: translateX(0px);
+    &:hover {
+      transform: translateY(3px);
       transition: all 0.3s;
+      box-shadow: none;
+
+      .icon {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 0.3s;
+      }
+    }
+
+    // disabled state
+    &:disabled {
+      background-color: $app-grey;
+      box-shadow: none;
+      transform: none;
+      .icon {
+        transform: none;
+        opacity: 1;
+      }
     }
   }
 }

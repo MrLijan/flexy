@@ -1,9 +1,9 @@
 <template>
   <!-- Base button -->
-  <button @click="clicked" class="base-button">
+  <button @click="clicked" class="base-button" :disabled="disabled">
     <!-- TEXT -->
     <span>
-      <slot></slot>
+      {{ label }}
     </span>
   </button>
 </template>
@@ -13,28 +13,21 @@ export default {
   name: 'DeButton',
 
   props: {
-    active: {
-      type: Boolean,
-      required: false,
-      default: false,
-    },
-
     disabled: {
       type: Boolean,
       required: false,
       default: false,
     },
 
-    icon: {
-      type: Boolean,
-      default: false,
+    label: {
+      type: String,
       required: false,
     },
   },
 
   methods: {
     clicked() {
-      this.$emit('clicked');
+      console.log('Click');
     },
   },
 };
